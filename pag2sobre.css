@@ -1,0 +1,210 @@
+.corpo2 {
+	background-image: linear-gradient(to right, white, lightblue);
+	/*define linearmente e gradativamente duas cores ou mais, começando da esquerda para a direita*/
+
+}
+
+.topo2 {
+	background-color: rgb(30, 36, 36);
+	/*define a cor de fundo utilizada antes do logo*/
+	text-align      : center;
+	/*define o alinhamento do logo no centro*/
+
+}
+
+h2 {
+	text-align: center;
+	/*define o cabeçalho h2 centralizado*/
+
+}
+
+.menu2 ul,
+.menu2 li {
+	margin : 0;
+	/*define a margem de cada lado, no caso estou utilizando nas barras de menu*/
+	padding: 9px;
+	/*define a distância do conteudo de um elemento e suas bordas, no caso eu utilizei para distanciar cada item do menu para que cada link pudesse ficar independente */
+}
+
+.menu2 ul {
+	background: rgb(15, 15, 15);
+	/*define a cor utilizada na barra superior que acompanha o menu*/
+	list-style: none;
+	/*define a retirada dos marcadores de uma lista, assim como foi realizado no menu*/
+	width     : 99%;
+	/*define a largura da barra superior criada para fixar o menu*/
+}
+
+.menu2 li {
+	float   : left;
+	/*define a posição do menu lista à esquerda*/
+	position: relative;
+	/*define a posição do menu lista criado relativa a sua posição natural, no caso na posição vertical*/
+	width   : 200px;
+	/*define a largura do menu na linha horizontal*/
+
+}
+
+.menu2 a {
+	background: #30A6E6;
+	/*define a cor utilizada na barra do menu*/
+	color     : #ffffff;
+	/*define a cor da letra referente a lista de menu criada*/
+	display   : block;
+	/*define o menu em blocos*/
+	font      : bold 14px/20px sans-serif;
+	/*define a fonte em negrito e seu tamanho, como também também o tipo de letra*/
+	padding   : 5px;
+	/*define a distância do conteudo de um elemento e suas bordas, no caso eu utilizei para distanciar o texto da caixa */
+	text-align: center;
+	/*define o texto centralizada na caixa*/
+}
+
+.menu2 li:hover a {
+	background: #000000;
+	/*define a cor do menu quando o mouse passa por ele*/
+}
+
+#submenu2 {
+	left      : 0;
+	/*define a posição do submenu a esquerda*/
+	opacity   : 0;
+	/*especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto*/
+	position  : absolute;
+	/*define a posição do submenu em uma posição fixa*/
+	top       : 30px;
+	/*define o ajuste superior do submenu ao menu*/
+	visibility: hidden;
+	/*define a visibilidade do elemento submenu na página*/
+	z-index   : 1;
+	/*define a profundidade do elemento submenu, ou seja, o quanto o submenu está afastado ou próximo da tela*/
+}
+
+li:hover ul#submenu2 {
+	opacity   : 1;
+	/*especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto*/
+	top       : 30px;
+	/*define o ajuste da lista do submenu ao menu*/
+	visibility: visible;
+	/*define a visibilidade do elemento submenu na página*/
+}
+
+#submenu2 li {
+	float: none;
+	/*define a posição do menu exatamente onde deve ocorrer*/
+	width: 100%;
+	/*define a largura do menu na linha horizontal*/
+}
+
+#submenu2 a:hover {
+	background: #000000;
+	/*define a cor utilizada no fundo do submenu */
+}
+
+#submenu2 a {
+	background-color: #30A6E6;
+	/*define a cor utilizada na barra do submenu*/
+}
+
+#container {
+	display        : flex;
+	/*define a necessidade do container para que as demais propriedades apresentem o resultado esperado.*/
+	height         : 750px;
+	/*define o tamanho em comprimento na vertical do container*/
+	width          : 100%;
+	/*define a largura na horizontal do container */
+	flex-wrap      : wrap;
+	/*define o alinhamento dos blocos dentro do container*/
+	margin         : auto;
+	/*define a margem do bloco dentro do container*/
+	border-style   : solid;
+	/*define o estilo da borda do container*/
+	justify-content: center;
+	/* define o alinhamento dos itens ao longo do eixo principal*/
+	align-items    : center;
+	/*define o alinhamento do intens no eixo transversal*/
+	justify-content: space-around;
+	/*define o espaço entre as figuras e o container*/
+}
+
+.item {
+	background-color: white;
+	/*define a cor de fundo do bloco*/
+	border          : 1px solid black;
+	/*define a espessura da borda e a cor da linha*/
+	margin-left     : 2px;
+	/*define as margens dos blocos a esquerda*/
+	height          : 300px;
+	/*define o tamanho dos blocos*/
+	text-align      : center;
+	/*define o alinhamento do texto centralizado*/
+	margin-top      : 2px;
+	/*define a margem do blocos da parte superior com o container*/
+}
+
+cite {
+	font      : bold;
+	/*define o texto em negrito*/
+	text-align: center;
+	/*define o alinhamento do texto centralizado*/
+	text-align: justify;
+	/*define o texto justificado*/
+
+}
+
+p {
+	text-align: justify;
+	/*define o alinhamento dos textos dentro do parágrafo justificado*/
+	text-align: center;
+	/*define o alinhamento dos textos dentro do parágrafo centralizado*/
+}
+
+.rodape {
+	width           : 100%;
+	/*define a largura da barra inferior criada para o rodapé*/
+	height          : 100px;
+	/*define a margem da área na parte inferior de um elemento*/
+	font-size       : 0.7em;
+	/*define o tamanho da fonte da letra, neste caso utilizei a proporção em*/
+	float           : inherit;
+	/*define que a propriedade deve herdar seu valor de seu elemento pai*/
+	text-align      : center;
+	/*define a centralização do texto*/
+	font-family     : Georgia, 'Times New Roman', Times, serif;
+	/*define a font de famílias utilizada*/
+	margin-top      : auto;
+	/*difine a margem superior*/
+	color           : #000000;
+	/*define a cor do texto*/
+	background-color: #30A6E6;
+	/*define a cor do dundo do rodapé*/
+}
+
+.redes {
+	width     : 100%;
+	/*define a largura da lista desordenada*/
+	text-align: center;
+	/*define a centralização do texto*/
+}
+
+.redes,
+.imgs {
+	width: 3%;
+	/*define o tamanho do ícones das redes sociais*/
+}
+
+.redes,
+.lista,
+.l1 {
+	list-style-type: none;
+	/*define a retirada dos marcadores de uma lista*/
+	display        : inline;
+	/*define a disposição dos icones na linha inferior*/
+}
+
+.redes {
+	width: 60%;
+	/*define o tamanho da lista de ícones com relação ao tamanho do rodapé*/
+	float: right;
+	/*define a flutuação dos ícones a direita*/
+}

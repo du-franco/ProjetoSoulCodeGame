@@ -1,0 +1,726 @@
+.corpo {
+	background-image: linear-gradient(to right, white, lightblue);
+	/*define linearmente e gradativamente duas cores ou mais, começando da esquerda para a direita*/
+	display         : flex;
+	/*define a necessidade do container para que as demais propriedades apresentem o resultado esperado.*/
+	flex-direction  : column;
+	/*define a direção na qual os elementos flex serão exibidos ao longo do eixo principal*/
+	min-height      : 100%;
+	/*define a altura mínima do elemento*/
+}
+
+.topo {
+	background-color: rgb(30, 36, 36);
+	/*define a cor de fundo utilizada antes do logo*/
+	text-align      : center;
+	/*define o alinhamento do logo no centro*/
+}
+
+.menu ul,
+.menu li {
+	margin : 0;
+	/*define a margem de cada lado, no caso estou utilizando nas barras de menu*/
+	padding: 9px;
+	/*define a distância do conteudo de um elemento e suas bordas, no caso eu utilizei para distanciar cada item do menu para que cada link pudesse ficar independente */
+}
+
+.menu ul {
+	background: rgb(15, 15, 15);
+	/*define a cor utilizada na barra superior que acompanha o menu*/
+	list-style: none;
+	/*define a retirada dos marcadores de uma lista, assim como foi realizado no menu*/
+	width     : 99%;
+	/*define a largura da barra superior criada para fixar o menu*/
+}
+
+.menu li {
+	float   : left;
+	/*define a posição do menu lista à esquerda*/
+	position: relative;
+	/*define a posição do menu lista criado relativa a sua posição natural, no caso na posição vertical*/
+	width   : 200px;
+	/*define a largura do menu na linha horizontal*/
+
+}
+
+.menu a {
+	background: #30A6E6;
+	/*define a cor utilizada na barra do menu*/
+	color     : #ffffff;
+	/*define a cor da letra referente a lista de menu criada*/
+	display   : block;
+	/*define o menu em blocos*/
+	font      : bold 14px/20px sans-serif;
+	/*define a fonte em negrito e seu tamanho, como também também o tipo de letra*/
+	padding   : 5px;
+	/*define a distância do conteudo de um elemento e suas bordas, no caso eu utilizei para distanciar o texto da caixa */
+	text-align: center;
+	/*define o texto centralizada na caixa*/
+}
+
+.menu li:hover a {
+	background: #000000;
+	/*define a cor do menu quando o mouse passa por ele*/
+}
+
+#submenu {
+	left      : 0;
+	/*define a posição do submenu a esquerda*/
+	opacity   : 0;
+	/*especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto*/
+	position  : absolute;
+	/*define a posição do submenu em uma posição fixa*/
+	top       : 25px;
+	/*define o ajuste superior do submenu ao menu*/
+	visibility: hidden;
+	/*define a visibilidade do elemento submenu na página*/
+	z-index   : 1;
+	/*define a profundidade do elemento submenu, ou seja, o quanto o submenu está afastado ou próximo da tela*/
+}
+
+li:hover ul#submenu {
+	opacity   : 1;
+	/*especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto*/
+	top       : 30px;
+	/*define o ajuste da lista do submenu ao menu*/
+	visibility: visible;
+	/*define a visibilidade do elemento submenu na página*/
+}
+
+#submenu li {
+	float: none;
+	/*define a posição do menu exatamente onde deve ocorrer*/
+	width: 100%;
+	/*define a largura do menu na linha horizontal*/
+}
+
+#submenu a:hover {
+	background: #000000;
+	/*define a cor utilizada no fundo do submenu */
+}
+
+#submenu a {
+	background-color: #30A6E6;
+	/*define a cor utilizada na barra do submenu*/
+}
+
+h5 {
+	color          : royalblue;
+	/*define a cor da letra no cabeçalho h5*/
+	font-family    : monospace;
+	/*define a font utilizada na letra do cabeçalho h5*/
+	text-decoration: underline royalblue;
+	/*define o underline no nome que está no cabeçalho h5*/
+}
+
+.fileira1 {
+	display              : grid;
+	/*define os blocos para as imagens*/
+	grid-template-columns: auto auto auto auto auto;
+	/*define a quantidade de blocos a se criar*/
+	padding              : 10px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+}
+
+.jogo1 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo2 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo3 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo4 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo5 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.fileira2 {
+	display              : grid;
+	/*define os blocos para as imagens*/
+	grid-template-columns: auto auto auto auto auto;
+	/*define a quantidade de blocos a se criar*/
+	padding              : 10px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+}
+
+.jogo6 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo7 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo8 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo9 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo10 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.fileira3 {
+	display              : grid;
+	/*define os blocos para as imagens*/
+	grid-template-columns: auto auto auto auto auto;
+	/*define a quantidade de blocos a se criar*/
+	padding              : 10px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+}
+
+.jogo11 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo12 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo13 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo14 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo15 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.fileira4 {
+	display              : grid;
+	/*define os blocos para as imagens*/
+	grid-template-columns: auto auto auto auto auto;
+	/*define a quantidade de blocos a se criar*/
+	padding              : 10px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+}
+
+.jogo16 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo17 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo18 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo19 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo20 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.fileira5 {
+	display              : grid;
+	/*define os blocos para as imagens*/
+	grid-template-columns: auto auto auto auto auto;
+	/*define a quantidade de blocos a se criar*/
+	padding              : 10px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+}
+
+.jogo21 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo22 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo23 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo24 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo25 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.fileira6 {
+	display              : grid;
+	/*define os blocos para as imagens*/
+	grid-template-columns: auto auto auto auto auto;
+	/*define a quantidade de blocos a se criar*/
+	padding              : 10px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+}
+
+.jogo26 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo27 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo28 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo29 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo30 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.fileira7 {
+	display              : grid;
+	/*define os blocos para as imagens*/
+	grid-template-columns: auto auto auto auto auto;
+	/*define a quantidade de blocos a se criar*/
+	padding              : 10px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+}
+
+.jogo31 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo32 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo33 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo34 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.jogo35 {
+	background-color: cornsilk;
+	/*define a cor do bloco criado*/
+	border          : 1px solid black;
+	/*define o tamanho da borda do bloco*/
+	padding         : 20px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	font-size       : 20px;
+	/*define o tamanho da letra*/
+	text-align      : center;
+	/*define o elemento centralizado*/
+}
+
+.b1 {
+	font                 : bold 15px "Arial Black", helvetica, sans-serif;
+	/*define o tamanho da letra, fonte e usei bold para deixar em negrito*/
+	font-style           : normal;
+	/*define o estilo da fonte*/
+	color                : #ffd324;
+	/*define a cor da letra*/
+	background           : #158edb;
+	/*define a cor de fundo do botão*/
+	border               : 0px solid #4a3a00;
+	/*define a espessura da borda e seu tipo*/
+	text-shadow          : 0px -1px 1px #222222;
+	/*define a sombra do texto e a posição*/
+	box-shadow           : 10px 0px 12px #2e2300;
+	/*define a sombra da caixa e a posição*/
+	-moz-box-shadow      : 10px 0px 12px #2e2300;
+	/*adiciona efeitos de sombra em volta do elemento*/
+	-webkit-box-shadow   : 10px 0px 12px #2e2300;
+	/*adiciona efeitos de sombra em volta do elemento*/
+	border-radius        : 15px 15px 15px 15px;
+	/*define o arredondamento da borda do elemento*/
+	-moz-border-radius   : 15px 15px 15px 15px;
+	/*define a sombra do arredondamento da borda do elemento*/
+	-webkit-border-radius: 15px 15px 15px 15px;
+	/*define a sombra do arredondamento da borda do elemento*/
+	width                : 86px;
+	/*define o tamanho da caixa do botão*/
+	padding              : 10px 16px;
+	/*define a distância do conteudo de um elemento e suas bordas */
+	cursor               : pointer;
+	/*especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento*/
+	margin               : 0 auto;
+	/*define a margem de cada lado do botão*/
+}
+
+.b1:active {
+	cursor  : pointer;
+	/*especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento*/
+	position: relative;
+	/*define a posição do menu lista criado relativa a sua posição natural, no caso na posição vertical*/
+	top     : 2px;
+	/*define o ajuste do botão com a caixa*/
+}
+
+.rodape {
+	width           : 100%;
+	/*define a largura da barra inferior criada para o rodapé*/
+	bottom          : 0;
+	/*define a margem da área na parte inferior de um elemento*/
+	font-size       : 0.7em;
+	/*define o tamanho da fonte da letra, neste caso utilizei a proporção em*/
+	float           : inherit;
+	/*define que a propriedade deve herdar seu valor de seu elemento pai*/
+	text-align      : center;
+	/*define a centralização do texto*/
+	font-family     : Georgia, 'Times New Roman', Times, serif;
+	/*define a font de famílias utilizada*/
+	margin-top      : auto;
+	/*difine a margem superior*/
+	color           : #000000;
+	/*define a cor do texto*/
+	background-color: #30A6E6;
+	/*define a cor do dundo do rodapé*/
+}
+
+.redes {
+	width     : 100%;
+	/*define a largura da lista desordenada*/
+	text-align: center;
+	/*define a centralização do texto*/
+}
+
+.redes,
+.imgs {
+	width: 3%;
+	/*define o tamanho do ícones das redes sociais*/
+}
+
+.redes,
+.lista,
+.l1 {
+	list-style-type: none;
+	/*define a retirada dos marcadores de uma lista*/
+	display        : inline;
+	/*define a disposição dos icones na linha inferior*/
+}
+
+.redes {
+	width: 60%;
+	/*define o tamanho da lista de ícones com relação ao tamanho do rodapé*/
+	float: right;
+	/*define a flutuação dos ícones a direita*/
+}

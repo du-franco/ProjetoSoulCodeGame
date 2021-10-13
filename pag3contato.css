@@ -1,0 +1,323 @@
+.corpo {
+    background-image: linear-gradient(to right, white, lightblue);
+    /*define linearmente e gradativamente duas cores ou mais, começando da esquerda para a direita*/
+
+}
+
+.topo {
+    background-color: rgb(30, 36, 36);
+    /*define a cor de fundo utilizada antes do logo*/
+    text-align      : center;
+    /*define o alinhamento do logo no centro*/
+}
+
+.menu3 ul,
+.menu3 li {
+    margin : 0;
+    /*define a margem de cada lado, no caso estou utilizando nas barras de menu*/
+    padding: 9px;
+    /*define a distância do conteudo de um elemento e suas bordas, no caso eu utilizei para distanciar cada item do menu para que cada link pudesse ficar independente */
+}
+
+.menu3 ul {
+    background: rgb(15, 15, 15);
+    /*define a cor utilizada na barra superior que acompanha o menu*/
+    list-style: none;
+    /*define a retirada dos marcadores de uma lista, assim como foi realizado no menu*/
+    width     : 99%;
+    /*define a largura da barra superior criada para fixar o menu*/
+}
+
+.menu3 li {
+    float   : left;
+    /*define a posição do menu lista à esquerda*/
+    position: relative;
+    /*define a posição do menu lista criado relativa a sua posição natural, no caso na posição vertical*/
+    width   : 200px;
+    /*define a largura do menu na linha horizontal*/
+
+}
+
+.menu3 a {
+    background: #30A6E6;
+    /*define a cor utilizada na barra do menu*/
+    color     : #ffffff;
+    /*define a cor da letra referente a lista de menu criada*/
+    display   : block;
+    /*define o menu em blocos*/
+    font      : bold 14px/20px sans-serif;
+    /*define a fonte em negrito e seu tamanho, como também também o tipo de letra*/
+    padding   : 5px;
+    /*define a distância do conteudo de um elemento e suas bordas, no caso eu utilizei para distanciar o texto da caixa */
+    text-align: center;
+    /*define o texto centralizada na caixa*/
+}
+
+.menu3 li:hover a {
+    background: #000000;
+    /*define a cor do menu quando o mouse passa por ele*/
+}
+
+#submenu3 {
+    left      : 0;
+    /*define a posição do submenu a esquerda*/
+    opacity   : 0;
+    /*especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto*/
+    position  : absolute;
+    /*define a posição do submenu em uma posição fixa*/
+    top       : 25px;
+    /*define o ajuste superior do submenu ao menu*/
+    visibility: hidden;
+    /*define a visibilidade do elemento submenu na página*/
+    z-index   : 1;
+    /*define a profundidade do elemento submenu, ou seja, o quanto o submenu está afastado ou próximo da tela*/
+}
+
+li:hover ul#submenu3 {
+    opacity   : 1;
+    /*especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto*/
+    top       : 30px;
+    /*define o ajuste da lista do submenu ao menu*/
+    visibility: visible;
+    /*define a visibilidade do elemento submenu na página*/
+}
+
+#submenu3 li {
+    float: none;
+    /*define a posição do menu exatamente onde deve ocorrer*/
+    width: 100%;
+    /*define a largura do menu na linha horizontal*/
+}
+
+#submenu3 a:hover {
+    background: #000000;
+    /*define a cor utilizada no fundo do submenu */
+}
+
+#submenu3 a {
+    background-color: #30A6E6;
+    /*define a cor utilizada na barra do submenu*/
+}
+
+.box {
+    color           : white;
+    /*define a cor das caixas*/
+    position        : relative;
+    /*define a posição do menu lista criado relativa a sua posição natural, no caso na posição vertical*/
+    display         : inline-table;
+    /*define a disposição das caixas, ele se comporta como uma caixa embutida*/
+    background-color: rgba(0, 0, 0, 0.6);
+    /*define a cor de fundo do formulário*/
+    padding         : 15px;
+    /*define a distância do conteudo de um elemento e suas bordas */
+    border-radius   : 15px;
+    /*define o arredondamento da borda*/
+    width           : 98%;
+    /*define a largura da caixa do formulário*/
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+    /*define a cor da borda*/
+}
+
+legend {
+    border          : 1px solid dodgerblue;
+    /*define a cor da borda*/
+    padding         : 10px;
+    /*define a distância do conteudo de um elemento e suas bordas*/
+    text-align      : center;
+    /*define o alinhamento do texto centralizado*/
+    background-color: dodgerblue;
+    /*define a cor de fundo*/
+    border-radius   : 8px;
+    /*define o arredondamento da borda*/
+}
+
+.inputBox {
+    position: relative;
+    /*define a posição das caixas dentro do formulário*/
+}
+
+.inputUser {
+    background    : none;
+    /*define que a caixa de input não terá cor*/
+    border        : none;
+    /*define que a borda das caixa de input não terá borda*/
+    border-bottom : 1px solid white;
+    /*define a espessura da borda e cor*/
+    outline       : none;
+    /*define que a caixa de input não terá contorno*/
+    color         : white;
+    /*define a cor da fonte*/
+    font-size     : 15px;
+    /*define o tamanho da fonte*/
+    width         : 100%;
+    /*define a largura do input */
+    letter-spacing: 2px;
+    /*define o espaçamento de caracteres*/
+}
+
+#estado {
+    background    : none;
+    /*define que a caixa de input não terá cor*/
+    border        : none;
+    /*define que a borda das caixa de input não terá borda*/
+    border-bottom : 1px solid white;
+    /*define a espessura da borda e cor*/
+    outline       : none;
+    /*define que a caixa de input não terá contorno*/
+    color         : white;
+    /*define a cor da fonte*/
+    font-size     : 15px;
+    /*define o tamanho da fonte*/
+    width         : 100%;
+    /*define a largura do input */
+    letter-spacing: 2px;
+    /*define o espaçamento de caracteres*/
+}
+
+option {
+    color: black;
+    /*define a cor da fonte das opções de estado*/
+}
+
+::placeholder {
+    color: white;
+    /*define a cor da fonte*/
+}
+
+.labelInput {
+    position      : absolute;
+    /*define a posição do input em uma posição fixa*/
+    top           : 0px;
+    /*define o ajuste superior do input*/
+    left          : 0px;
+    /*define a esquerd o input*/
+    pointer-events: none;
+    /*define se um elemento reage ou não a eventos de ponteiro*/
+    transition    : .5s;
+    /*define a transição entre dois estados de um elemento*/
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top      : -20px;
+    /*define o ajuste superior do input*/
+    font-size: 12px;
+    /*define o tamanho da fonte*/
+    color    : dodgerblue;
+    /*define a cor da fonte*/
+}
+
+#dataNascimento {
+    border       : none;
+    /*define que não haverá borda no input*/
+    padding      : 8px;
+    /*define a distância do conteudo de um elemento e suas bordas*/
+    border-radius: 10px;
+    /*define o arredondamento da borda*/
+    outline      : none;
+    /*define que a caixa de input não terá contorno*/
+    font-size    : 15px;
+    /*define o tamanho da fonte*/
+}
+
+.submit {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    /*define linearmente e gradativamente duas cores ou mais, começando da esquerda para a direita, utilizei no botão enviar*/
+    width           : 10%;
+    /*define a largura do botão*/
+    border          : none;
+    /*define que não haverá borda*/
+    padding         : 15px;
+    /*define a distância do conteudo de um elemento e suas bordas*/
+    color           : white;
+    /*define a cor da fonte*/
+    font-size       : 15px;
+    /*define o tamanho da fonte*/
+    cursor          : pointer;
+    /*define a alteração do ponteiro do mouse*/
+    border-radius   : 10px;
+    /*define o arredondamento da borda*/
+}
+
+.submit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+    /*define linearmente e gradativamente duas cores ou mais, começando da esquerda para a direita, utilizei no botão enviar*/
+}
+
+.reset {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    /*define linearmente e gradativamente duas cores ou mais, começando da esquerda para a direita, utilizei no botão enviar*/
+    width           : 10%;
+    /*define a largura do botão*/
+    border          : none;
+    /*define que não haverá borda*/
+    padding         : 15px;
+    /*define a distância do conteudo de um elemento e suas bordas*/
+    color           : white;
+    /*define a cor da fonte*/
+    font-size       : 15px;
+    /*define o tamanho da fonte*/
+    cursor          : pointer;
+    /*define a alteração do ponteiro do mouse*/
+    border-radius   : 10px;
+    /*define o arredondamento da borda*/
+}
+
+.reset:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+    /*define linearmente e gradativamente duas cores ou mais, começando da esquerda para a direita, utilizei no botão enviar*/
+}
+
+.rodape {
+    width           : 100%;
+    /*define a largura da barra inferior criada para o rodapé*/
+    height          : 100px;
+    /*define a margem da área na parte inferior de um elemento*/
+    font-size       : 0.7em;
+    /*define o tamanho da fonte da letra, neste caso utilizei a proporção em*/
+    float           : inherit;
+    /*define que a propriedade deve herdar seu valor de seu elemento pai*/
+    text-align      : center;
+    /*define a centralização do texto*/
+    font-family     : Georgia, 'Times New Roman', Times, serif;
+    /*define a font de famílias utilizada*/
+    margin-top      : auto;
+    /*difine a margem superior*/
+    color           : #000000;
+    /*define a cor do texto*/
+    background-color: #30A6E6;
+    /*define a cor do dundo do rodapé*/
+
+}
+
+.redes {
+    width     : 100%;
+    /*define a largura da lista desordenada*/
+    text-align: center;
+    /*define a centralização do texto*/
+}
+
+.redes,
+.imgs {
+    width: 3%;
+    /*define o tamanho do ícones das redes sociais*/
+}
+
+.redes,
+.lista,
+.l1 {
+    list-style-type: none;
+    /*define a retirada dos marcadores de uma lista*/
+    display        : inline;
+    /*define a disposição dos icones na linha inferior*/
+}
+
+.redes {
+    width: 60%;
+    /*define o tamanho da lista de ícones com relação ao tamanho do rodapé*/
+    float: right;
+    /*define a flutuação dos ícones a direita*/
+}

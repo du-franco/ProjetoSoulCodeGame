@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/favicon.icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="pag3contato.css">
+    <title>NET-GAMES</title>
+</head>
+<!--Usei um class no body para estilizar no css-->
+
+<body class="corpo">
+    <!--Usei um class no header e img para estilizar no css-->
+    <header class="topo">
+        <!--Usei a tag img para colocar o logo principal-->
+        <img class="logo" src="Imagens/Logo/greenDark.gif" alt="">
+    </header>
+    <!-- Usei uma tag nav para criar uma barra de navegaçao -->
+    <nav class="menu3">
+        <!--Usei a tag ul para criar uma lista desoordenada usando como menu e uma class para estilizar no css-->
+        <ul>
+            <li><a href="IndexCss.html">Inicio</a></li>
+            <li><a href="#">Sobre</a>
+                <ul id="submenu3">
+                    <li><a href="pag2sobrecss.html">História</a></li>
+                    <li><a href="sejasocio.html">Seja Sócio</a></li>
+
+                </ul>
+            </li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="#">Interativo</a>
+                <ul id="submenu3">
+                    <li><a href="musicas.html">Músicas</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                </ul>
+            </li>
+            <li><a href="loja.html">Loja</a></li>
+            <li><a href="ContatoCss.html">Contato</a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+    </nav>
+    <!-- Usei uma div e chamei uma class para estilizar o formulário no css -->
+    <div class="box">
+        <!--Form com action para chamar um arquivo e method para selecionar o método de envio desse dados-->
+        <form action="" method="">
+            <!--Utilizando fildset para deixar informações dentro de uma caixa-->
+            <fieldset>
+                <!--Criando um formulário-->
+                <legend>Informações de Contato</legend>
+                <br />
+                <!-- Criei uma div e uma class para cada label -->
+                <div class="inputBox">
+                    <!--Caixa para digitar o nome-->
+                    <label for="nome" class="labelInput"></label>
+                    <input type="text" id="nome" name="nome" class="inputUser" placeholder="Digite aqui o seu nome."
+                        required>
+                </div>
+                <br />
+                <div class="inputBox">
+                    <label for="estado" class="labelInput"></label>
+                    <!--Usando select para marcar o objeto-->
+                    <select name="estado" id="estado">
+                        <!--Usando option para esolher um objeto-->
+                        <option>Selecione seu Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piuaí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantis</option>
+                    </select>
+                </div>
+                <br />
+                <div>
+                    <!--Caixa para selecionar a data de nascimento-->
+                    <label for="dataNascimento" class="inputLabel">Selecione sua data de nascimento: </label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </div>
+                <br />
+                <div>
+                    <!--Caixa para digitar o email-->
+                    <label for="email" class="inputLabel">
+                        Email:
+                    </label>
+                    <input type="email" id="email" placeholder="Digite aqui o seu email." required>
+
+                </div>
+                <br />
+                <div>
+                    <!--Caixa para digitar uma senha-->
+                    <label for="senha" class="inputLabel">
+                        Senha:
+                    </label>
+                    <input type="password" id="senha" placeholder="Digite aqui a sua senha." required>
+                </div>
+                <br />
+                <!-- Criei um radio para a escolha do sexo -->
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Não Binário</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+                <!--Caixa para digitar uma mensagem-->
+                <div>
+                    <label for="mensagem" class="inputLabel">
+                        Mensagem:
+                    </label>
+                    <textarea id="mensagem" cols="30" rows="10" placeholder="Digite aqui a sua mensagem."></textarea>
+                </div>
+                <br />
+                <nav>
+                    <!--Caixa de marcação de opções-->
+                    <fieldset>
+                        <legend>Quer falar sobre: </legend><br>
+                        <input type="checkbox" name="opcoes">Problemas de Login
+                        <input type="checkbox" name="opcoes">Criação de Conta
+                        <input type="checkbox" name="opcoes">Sugestão de Jogos
+                        <input type="checkbox" name="opcoes">Outros
+
+                    </fieldset>
+                    <fieldset>
+                        <!--Botão para limpar formulário com reset-->
+                        <p>
+                            <input type="reset" class="reset" value="Limpar">
+
+                            </input>
+
+                            <!--Botão para enviar com submit-->
+
+                            <input type="submit" class="submit" value="Enviar">
+                            </input>
+                        </p>
+        </form>
+        </nav>
+    </div>
+    <!-- Usei a tag footer para criar um rodapé e colocar o CopyRight -->
+    <footer class=rodape>
+        <p>
+            &copy;2021, NET-GAMES99 Ltda. TODOS OS DIREITOS RESERVADOS.
+        </p>
+        <!-- Usei a tag div para criar uma tabela com a tag ul, assim criando uma lista desordenada com os ícones das redes sociais -->
+        <div class="redes">
+            <ul class="lista">
+                <p>Siga-nos</p>
+                <!-- Usei a tag li para criar a lista e a tag img para inserir as imagens dos ícones das redes sociais -->
+                <li class="l1"><a href="#" target="_blank"><img class="imgs"
+                            src="Imagens/imgs-logo-rodape/imgs-logo-rodape-responsivo/img/facebook.png"
+                            alt="Nosso Facebook"></a></li>
+                <li class="l1"><a href="#" target="_blank"><img class="imgs"
+                            src="Imagens/imgs-logo-rodape/imgs-logo-rodape-responsivo/img/google.png"
+                            alt="Nosso Google Plus"></a></li>
+                <li class="l1"><a href="#" target="_blank"><img class="imgs"
+                            src="Imagens/imgs-logo-rodape/imgs-logo-rodape-responsivo/img/instagram.png"
+                            alt="Nosso Instagram"></a></li>
+                <li class="l1"><a href="#" target="_blank"><img class="imgs"
+                            src="Imagens/imgs-logo-rodape/imgs-logo-rodape-responsivo/img/twitter.png"
+                            alt="Nosso Twitter"></a></li>
+                <li class="l1"><a href="#" target="_blank"><img class="imgs"
+                            src="Imagens/imgs-logo-rodape/imgs-logo-rodape-responsivo/img/youtube.png"
+                            alt="Nosso Youtube"></a></li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
